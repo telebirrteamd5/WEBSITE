@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://res.wx.qq.com/open/libs/weui/2.0.1/weui.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://res.wx.qq.com/t/wx_fed/cdn_libs/res/weui/1.2.3/weui.min.js"
+    ></script>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <script>
+      // VConsole will be exported to `window.VConsole` by default.
+      var vConsole = new window.VConsole();
+    </script>
+    <script src="js/xm.js"></script>
+    <script src="js/config.js"></script>
+    <link rel="stylesheet" href="css/product.css" />
+    <script>
+      const priceList = [100, 20, 50, 100, 200, 500, 1000];
+
+      let price;
+
+      function selectProduct(itemIndex) {
+        // reset all item style
+        let selectItems = document.getElementsByClassName("per-act");
+        if (selectItems.length > 0) {
+          for (let i = 0; i < selectItems.length; i++) {
+            selectItems[i].setAttribute("class", "per perb");
+          }
+        }
+
+        // set current selected item style
+        let productList = document.getElementById("product_list");
+        productList.children[itemIndex].setAttribute("class", "per per-act");
+
+        // set button style
+        let btn = document.getElementById("buy");
+        btn.setAttribute("class", "c");
+        btn.innerText = "Recharge: " + priceList[itemIndex];
+        price = priceList[itemIndex];
+      }
+
+      function startPay() {
+        window.handleinitDataCallback = function () {
+          window.location.href = window.location.origin;
+        };
+        if (!price) {
+          return;
+        }
+        let loading = weui.loading("loading", {});
+        console.log(baseUrl);
+        window
+          .fetch(baseUrl + "/create/order", {
+            method: "post",
+            mode: "cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              title: "diamond_" + price,
+              amount: price + "",
+            }),
+          })
+          .then((res) => {
+            res.text().then((rawRequest) => {
+              if (!rawRequest) {
+                return;
+              }
+              if (!window.consumerapp) {
+                console.log("this page is not open in app");
+                return;
+              }
+              window.consumerapp.evaluate(
+                JSON.stringify({
+                  functionName: "js_fun_start_pay",
+                  params: {
+                    rawRequest: rawRequest,
+                    functionCallBackName: "handleinitDataCallback",
+                  },
+                })
+              );
+            });
+          })
+          .finally(() => {
+            loading.hide();
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div class="home">
+        <div class="content">
+          <p>Amount</p>
+          <div class="amount" id="product_list">
+            <div onclick="selectProduct(0);" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">10 USD</div>
+              </div>
+            </div>
+            <div onclick="selectProduct(1)" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">20 USD</div>
+              </div>
+            </div>
+            <div onclick="selectProduct(2)" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">503 USD</div>
+              </div>
+            </div>
+            <div onclick="selectProduct(3)" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">100 USD</div>
+              </div>
+            </div>
+            <div onclick="selectProduct(4)" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">200 USD</div>
+              </div>
+            </div>
+            <div onclick="selectProduct(5)" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">500 USD</div>
+              </div>
+            </div>
+            <div onclick="selectProduct(6)" class="per perb">
+              <div class="tips">
+                <img src="img/diamonds_1.png" />
+              </div>
+              <div class="dscription">
+                <div class="bg1">diamond_1</div>
+                <div class="bg2 fn2">1000 USD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer" id="foot">
+          <button class="b" type="button" id="buy" onclick="startPay();">
+            Recharge
+          </button>
+          <div class="p">www.mobilelegends.com</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
