@@ -1,0 +1,10 @@
+{
+  "name": "et-demo-giftcard-web",
+  "version": "1.0.0",
+  "scripts": {
+    "web": "http-server app"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
