@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "6285fce7-a89a-4064-a52a-f72f61a198e8",
+		"_postman_id": "455e1dc1-72fd-4fe4-b122-9ce23fad8192",
 		"name": "openapi",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "34673572-455e1dc1-72fd-4fe4-b122-9ce23fad8192"
 	},
 	"item": [
 		{
@@ -18,17 +19,21 @@
 							"    pm.environment.set(\"token\", responseBodyJson.token);\r",
 							"}"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "89f3b470-64ea-40c6-8949-49423c0549f4"
 					}
 				}
 			],
+			"id": "0626394b-4cab-4252-a431-2cd39dbcf161",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-APP-Key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -63,7 +68,8 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "562d2f23-c59c-45c1-ac10-33ea162200c7"
 					}
 				},
 				{
@@ -77,22 +83,25 @@
 							"}\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "de207be1-a130-409c-b374-1c3a2bdc2ac3"
 					}
 				}
 			],
+			"id": "a4714ddc-30e2-4ede-b146-26e3c4596396",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -128,22 +137,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "c75f9d86-a55b-4daf-8b69-7df8e9c795ab"
 					}
 				}
 			],
+			"id": "e7b3fd4d-db3c-4823-9f16-9b288c463c86",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-APP-Key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -183,7 +195,8 @@
 							"    pm.environment.set(\"prepay_id\", responseBodyJson.biz_content.prepay_id);\r",
 							"}"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "b1a8b21f-c725-4355-b411-0ef74518f63a"
 					}
 				},
 				{
@@ -192,22 +205,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "f8d4e17b-485b-4cdc-a68d-805f719f93be"
 					}
 				}
 			],
+			"id": "5249742a-179e-417c-8760-630aa9fc94af",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -243,7 +259,8 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "542c790a-6384-415e-86ad-8593a64b3376"
 					}
 				},
 				{
@@ -252,22 +269,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "77dc36ee-680d-4e9e-9a82-030a9eda1f24"
 					}
 				}
 			],
+			"id": "cd97e01d-d818-4c21-8d51-946a5184ddbb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -303,22 +323,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "79890f11-dfda-4182-98ac-16343d564629"
 					}
 				}
 			],
+			"id": "06d2fb03-bb5a-4a03-9398-d27ff7e6dcde",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -354,22 +377,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "aca23df8-b587-4940-ac69-a94dab46963f"
 					}
 				}
 			],
+			"id": "2303d53f-8a6c-4f89-ae4c-a7a6ca3e2869",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -405,22 +431,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "cf1eb44b-cb03-4671-8f32-0c14bf13a9b6"
 					}
 				}
 			],
+			"id": "d05fbd51-cf65-448c-9b13-098180506dbf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -456,22 +485,25 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "ea0923c4-869c-49dc-905d-c23d791aed96"
 					}
 				}
 			],
+			"id": "913b8008-f2ab-4e13-9e0d-fd423f04d943",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -500,18 +532,20 @@
 		},
 		{
 			"name": "queryrefund",
+			"id": "b95d2c82-eab9-4257-8d20-d91ec96a243b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -537,6 +571,30 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6a6150cd-9a04-406f-8e50-50b3d090db70",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f9d45ff0-27a4-4daf-9a92-c8ecd5cec89d",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
