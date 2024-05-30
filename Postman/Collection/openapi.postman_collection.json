@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "6285fce7-a89a-4064-a52a-f72f61a198e8",
+		"_postman_id": "08152b85-c378-4815-a9be-d479ce5f5750",
 		"name": "openapi",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "34673572-08152b85-c378-4815-a9be-d479ce5f5750"
 	},
 	"item": [
 		{
@@ -18,10 +19,12 @@
 							"    pm.environment.set(\"token\", responseBodyJson.token);\r",
 							"}"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "6619a1af-ac4b-4a25-a64e-c93dffd8851e"
 					}
 				}
 			],
+			"id": "6586bc57-a417-490c-bf63-f028f48013c6",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -63,7 +66,8 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "76da4c7d-453c-4055-bb5f-33718a10bfb6"
 					}
 				},
 				{
@@ -77,10 +81,12 @@
 							"}\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "2c2f3be0-8828-4c48-a1b4-38f9227f945e"
 					}
 				}
 			],
+			"id": "eb04ccd2-cb0a-4e46-a277-1d171d7cce79",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -128,10 +134,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "e33228ff-2e97-4af1-8f9e-68c5b4dd4599"
 					}
 				}
 			],
+			"id": "5a1ed39e-75dc-4b3d-9176-f454fddc019a",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -183,7 +191,8 @@
 							"    pm.environment.set(\"prepay_id\", responseBodyJson.biz_content.prepay_id);\r",
 							"}"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "98ed95d6-e31c-429c-b8a6-50388ea61c96"
 					}
 				},
 				{
@@ -192,10 +201,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "fe38e973-7edc-4d1b-859a-a3af10ddbafd"
 					}
 				}
 			],
+			"id": "1729f93b-50eb-4260-ace6-1cd74f089313",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -243,7 +254,8 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "efc23333-a7e5-4854-b093-547c56456332"
 					}
 				},
 				{
@@ -252,10 +264,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "4d564fd2-322d-47f5-91a8-fa7818290ad7"
 					}
 				}
 			],
+			"id": "57b44406-eff6-4ca9-a22f-2ebaaf37e4c7",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -303,10 +317,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "561e4c1a-1971-4074-b248-de358b68eec8"
 					}
 				}
 			],
+			"id": "1a2e6c0c-e7db-4dda-af2c-86c2b0e3a7d3",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -354,10 +370,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "6df2ece3-0973-4eb0-bdb5-1e57c3ff470b"
 					}
 				}
 			],
+			"id": "b73f5282-953f-44e5-877b-951e71818540",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -405,10 +423,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "c5264faf-ede2-4aa0-86a7-4616c999a0b4"
 					}
 				}
 			],
+			"id": "b05b14e1-cb7b-4b26-843a-1dfc4ffb5833",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -456,10 +476,12 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"id": "023a284e-34d1-4c43-bc7d-ff866f36f66b"
 					}
 				}
 			],
+			"id": "57cd5954-7b67-4e13-9030-43dcc3fcfaaa",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -500,6 +522,7 @@
 		},
 		{
 			"name": "queryrefund",
+			"id": "7244ae53-658c-423a-aea6-0f26909fc410",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -539,4 +562,4 @@
 			"response": []
 		}
 	]
-          }
+}
