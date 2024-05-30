@@ -25,13 +25,15 @@
 				}
 			],
 			"id": "0626394b-4cab-4252-a431-2cd39dbcf161",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-APP-Key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -87,18 +89,19 @@
 				}
 			],
 			"id": "a4714ddc-30e2-4ede-b146-26e3c4596396",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -140,18 +143,19 @@
 				}
 			],
 			"id": "e7b3fd4d-db3c-4823-9f16-9b288c463c86",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-APP-Key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -207,18 +211,19 @@
 				}
 			],
 			"id": "5249742a-179e-417c-8760-630aa9fc94af",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -270,18 +275,19 @@
 				}
 			],
 			"id": "cd97e01d-d818-4c21-8d51-946a5184ddbb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -323,18 +329,19 @@
 				}
 			],
 			"id": "06d2fb03-bb5a-4a03-9398-d27ff7e6dcde",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -376,18 +383,19 @@
 				}
 			],
 			"id": "2303d53f-8a6c-4f89-ae4c-a7a6ca3e2869",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -429,18 +437,19 @@
 				}
 			],
 			"id": "d05fbd51-cf65-448c-9b13-098180506dbf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					},
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					}
 				],
 				"body": {
@@ -482,18 +491,19 @@
 				}
 			],
 			"id": "913b8008-f2ab-4e13-9e0d-fd423f04d943",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -523,18 +533,19 @@
 		{
 			"name": "queryrefund",
 			"id": "b95d2c82-eab9-4257-8d20-d91ec96a243b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{token}}",
-						"type": "text"
+						"value": "{{token}}"
 					},
 					{
 						"key": "x-app-key",
-						"value": "{{appid}}",
-						"type": "text"
+						"value": "{{appid}}"
 					}
 				],
 				"body": {
@@ -560,6 +571,122 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9cae8034-ef6d-47ea-b0d7-cd048ddb2cab",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "dedf43c0-02d3-47da-b8a5-32eec07b8635",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "79f5e016-4db8-49e9-bea9-fb6b49cef282",
+			"key": "BasicURL",
+			"value": "https://196.188.120.3:38443/apiaccess/payment/gateway",
+			"type": "string"
+		},
+		{
+			"id": "1766e983-8ba4-4ea6-af9c-58ce3a93f48a",
+			"key": "ConsumerMsisdn",
+			"value": "251995438258",
+			"type": "string"
+		},
+		{
+			"id": "11bdf3af-7f1f-41d9-991f-a648c0c237a9",
+			"key": "MerchantId",
+			"value": "1200446526771205",
+			"type": "string"
+		},
+		{
+			"id": "3d4b1719-b5e6-4608-b895-fa3772d3a0e4",
+			"key": "PrivateKey",
+			"value": "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/ZcoOng1sJZ4CegopQVCw3HYqqVRLEudgT+dDpS8fRVy7zBgqZunju2VRCQuHeWs7yWgc9QGd4/8kRSLY+jlvKNeZ60yWcqEY+eKyQMmcjOz2Sn41fcVNgF+HV3DGiV4b23B6BCMjnpEFIb9d99/TsjsFSc7gCPgfl2yWDxE/Y1B2tVE6op2qd63YsMVFQGdre/CQYvFJENpQaBLMq4hHyBDgluUXlF0uA1X7UM0ZjbFC6ZIB/Hn1+pl5Ua8dKYrkVaecolmJT/s7c/+/1JeN+ja8luBoONsoODt2mTeVJHLF9Y3oh5rI+IY8HukIZJ1U6O7/JcjH3aRJTZagXUS9AgMBAAECggEBALBIBx8JcWFfEDZFwuAWeUQ7+VX3mVx/770kOuNx24HYt718D/HV0avfKETHqOfA7AQnz42EF1Yd7Rux1ZO0e3unSVRJhMO4linT1XjJ9ScMISAColWQHk3wY4va/FLPqG7N4L1w3BBtdjIc0A2zRGLNcFDBlxl/CVDHfcqD3CXdLukm/friX6TvnrbTyfAFicYgu0+UtDvfxTL3pRL3u3WTkDvnFK5YXhoazLctNOFrNiiIpCW6dJ7WRYRXuXhz7C0rENHyBtJ0zura1WD5oDbRZ8ON4v1KV4QofWiTFXJpbDgZdEeJJmFmt5HIi+Ny3P5n31WwZpRMHGeHrV23//0CgYEA+2/gYjYWOW3JgMDLX7r8fGPTo1ljkOUHuH98H/a/lE3wnnKKx+2ngRNZX4RfvNG4LLeWTz9plxR2RAqqOTbX8fj/NA/sS4mru9zvzMY1925FcX3WsWKBgKlLryl0vPScq4ejMLSCmypGz4VgLMYZqT4NYIkU2Lo1G1MiDoLy0CcCgYEAwt77exynUhM7AlyjhAA2wSINXLKsdFFF1u976x9kVhOfmbAutfMJPEQWb2WXaOJQMvMpgg2rU5aVsyEcuHsRH/2zatrxrGqLqgxaiqPz4ELINIh1iYK/hdRpr1vATHoebOv1wt8/9qxITNKtQTgQbqYci3KV1lPsOrBAB5S57nsCgYAvw+cagS/jpQmcngOEoh8I+mXgKEET64517DIGWHe4kr3dO+FFbc5eZPCbhqgxVJ3qUM4LK/7BJq/46RXBXLvVSfohR80Z5INtYuFjQ1xJLveeQcuhUxdK+95W3kdBBi8lHtVPkVsmYvekwK+ukcuaLSGZbzE4otcn47kajKHYDQKBgDbQyIbJ+ZsRw8CXVHu2H7DWJlIUBIS3s+CQ/xeVfgDkhjmSIKGX2to0AOeW+S9MseiTE/L8a1wY+MUppE2UeK26DLUbH24zjlPoI7PqCJjl0DFOzVlACSXZKV1lfsNEeriC61/EstZtgezyOkAlSCIH4fGr6tAeTU349Bnt0RtvAoGBAObgxjeH6JGpdLz1BbMj8xUHuYQkbxNeIPhH29CySn0vfhwg9VxAtIoOhvZeCfnsCRTj9OZjepCeUqDiDSoFznglrKhfeKUndHjvg+9kiae92iI6qJudPCHMNwP8wMSphkxUqnXFR3lr9A765GA980818UWZdrhrjLKtIIZdh+X1",
+			"type": "string"
+		},
+		{
+			"id": "074220e9-9717-4aaf-866a-563923b83526",
+			"key": "appid",
+			"value": "ba59e15e-11be-4ea0-a664-88b42ebc4dc0",
+			"type": "string"
+		},
+		{
+			"id": "0114e1f1-b7f2-4526-b22b-6c0ac06ec4fc",
+			"key": "App Secret",
+			"value": "aae8a4cc8044212577ae5edf0f0a74d9",
+			"type": "string"
+		},
+		{
+			"id": "027b1723-ff96-44f6-9f21-080537efa001",
+			"key": "ConsumerPin",
+			"value": "XgNaGZQFe8DmqH+3t4dtvNI+c7gIboYGihKIwVrf+0fPsmUJbPh8NGSnEM44B2N/HCRj1huiCjqdqqsZ89sTvbiiovgH1f6VhEFMraCO+VKUiyrWVMXCTjzwXB5ilysXR6IksmixhNb9XB/6/ZaaxX7hIXOb42MiNc+C0YL2PxS1GakKJPOSUtWyD8eCo3Dj7DBeIsjxCeYLdevT3x2MG0Kfdu5E4CiplKTOckyeKhL/TzF1BTv5LDXK6ZSbG5tA1LhRM74jjjCJdc8aWSrUb9ujKqduxHnfE1xsp92xS6wDK5BaDyP1Dwy0Ly1OSvdvzujhsEm3H3D9QP9bK1F8sA==",
+			"type": "string"
+		},
+		{
+			"id": "31d62808-9420-4d6d-a83f-17d71ea03e0a",
+			"key": "token",
+			"value": "Bearer 94cc42bee412696d754508c06ca1db20",
+			"type": "string"
+		},
+		{
+			"id": "a4324da3-7780-4f43-b40d-cd0d31e26fcc",
+			"key": "sign",
+			"value": "BC4EE8D710BAC6A7E33DE4511A1CE77230EF",
+			"type": "string"
+		},
+		{
+			"id": "9b282f2d-98b9-479c-96ed-63d789041b0a",
+			"key": "merch_order_id",
+			"value": "201907151435001",
+			"type": "string"
+		},
+		{
+			"id": "01d55a1e-f94f-4ae2-b1a9-2f77639b21d7",
+			"key": "prepay_id",
+			"value": "007a6bd3175cdb3c658545a4f3f8q87c87483",
+			"type": "string"
+		},
+		{
+			"id": "35621d0b-dc99-4105-98b7-0a0097f5a476",
+			"key": "rawSign",
+			"value": "appid=ba59e15e-11be-4ea0-a664-88b42ebc4dc0&merch_code=176284\\n&nonce_str=12345678901234567890123456789011&prepay_id=007a6bd3175cdb3c658545a4f3f8q87c87483&sign=ujhjhhbhsv73787835/3njnjn5jn535+njnbjnjfb&sign_type=SHA256WithRSA&timestamp=1234323432",
+			"type": "string"
+		},
+		{
+			"id": "457fa127-9633-4d83-b6be-76536408c26e",
+			"key": "payeeConsumerMsisdn",
+			"value": "251995438258",
+			"type": "string"
+		},
+		{
+			"id": "eebac059-4b71-4abc-880d-09a27a497b66",
+			"key": "refund_request_no",
+			"value": "251127",
+			"type": "string"
+		},
+		{
+			"id": "e9e25276-ddc9-414e-a399-f26485672c91",
+			"key": "access_token",
+			"value": "AIzaSyBAVqmkeDK3TT2omBk5kGbrTXzxtcQJXmE",
+			"type": "string"
 		}
 	]
 }
