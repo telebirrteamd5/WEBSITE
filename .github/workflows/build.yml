@@ -1,0 +1,19 @@
+name: Automated API tests using Postman CLI
+
+on: push
+
+jobs:
+  automated-api-tests:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/osx_64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "${{ github.workspace }}/Postman/Collection/openapi.postman_collection.json" -e "34673572-82c956e9-8816-4b73-9e25-56273e9efcb4"
+          # Lint your API using Postman CLI
+          postman api lint d7d4ad03-0505-4796-abb6-a5ffc9bb57b1
