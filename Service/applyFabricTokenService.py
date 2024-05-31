@@ -23,5 +23,5 @@ class ApplyFabricTokenService:
               "appSecret": self.appSecret
         }
         data=json.dumps(payload)
-        authToken = requests.post(url=self.BASE_URL,headers=headers,params=data,verify=False)
+        authToken = requests.post(url=self.BASE_URL,headers=headers,params=data,verify=True)
         return authToken

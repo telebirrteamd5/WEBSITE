@@ -46,7 +46,7 @@ class CreateOrderService:
         }
         # Body parameters
         payload = self.createRequestObject(title,amount)
-        servert_output = requests.post(url=self.BASE_URL,headers=headers,params=payload,verify=False)
+        servert_output = requests.post(url=self.BASE_URL,headers=headers,params=payload,verify=True)
         return servert_output
     #  * @Purpose: Creating Request Object
     #  *
